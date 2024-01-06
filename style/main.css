@@ -5,10 +5,13 @@ html{
 *,*::before, *::after {
     box-sizing: inherit;
 }
-
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background: url(../img/bg.png);
+    width: 1438px;
+    height: 769px;
+    background-repeat: no-repeat;
 }
 .container{
     width: 100%;
@@ -16,12 +19,102 @@ body{
     margin: 0 auto;
     padding: 0 250px;
 }
+/* Раздел "Header_menu"*/
+.header_menu {
+    text-align: center;
+    width: 1438px;
+    height: 769px;
+}
+.logo {
+    width: 101.618px;
+    height: 23px;
+    margin-top: 41px;
+    margin-bottom: 317px;
+}
+
+.story_title_1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.709px;
+    margin: 0;
+
+}
+.header_text {
+    color: #FFF;
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 16px;
+    margin: 0;
+}
+.scroll_down {
+    margin-top: 200px;
+    color: #FFF;
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 11px;
+    letter-spacing: 3.7px;
+}
+/*Раздел "Header"*/
+.burger{
+    display:none;
+}
+.main{
+    width: 100%;
+}
+/*   первая страница   */
+.header{
+    max-width: 1920px;
+    min-height: 100px;
+    padding-left:100px;
+    padding-right: 100px;
+}
+.container{
+    max-width: 1105px;
+    margin: 0 auto;
+}
+.header-box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 42px;
+    letter-spacing: 1.091px;
+    text-transform: uppercase;
+    font-family: OpenSans, sans-serif;
+    cursor: pointer;
+}
+.header-menu__href{
+    text-decoration: none;
+    outline: none;
+    color: #48555B;
+}
+.header-menu__href:hover{
+    color: #00A4E5;
+}
+hr {
+    max-width: 1440px;
+    border: none;
+    border-top: 1px solid #E6E6E6;
+    background: #FFF;
+}
 /* Раздел "Our story"*/
 .story {
     padding: 50px 0;
 }
 .story_left {
     max-width: 398px;
+    margin-right: 100px;
 }
 .story_title_2 {
     color: #48555b;
@@ -29,7 +122,6 @@ body{
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    padding: 50px 0;
 }
 .story_title_2:after {
     content: '';
@@ -43,7 +135,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
 .story_title_3 {
     color: #48555b;
     font-weight: bold;
@@ -51,9 +142,6 @@ body{
 }
 .accent-color {
     color: #00A4E5;
-}
-.story_text {
-
 }
 .story_right {
     align-items: flex-end;
